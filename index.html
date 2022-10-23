@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <a href="https://github.com/kikiturk/spotifyLogin.git"></a>
+    <link rel="icon" type="icon" href="icons8-spotify-32.png">
+    <meta charset="UTF-8">
+    <title>Spotify Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <h2>Spotify</h2>
+            <div class="inputBox">
+                <input type="text" required="required" maxlength="25">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password"  required="required" maxlength="25">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="https://www.spotify.com/si-sl/password-reset/" target="_blank">Forgot Password</a>
+                <a href="https://www.spotify.com/si-sl/signup?forward_url=https%3A%2F%2Faccounts.spotify.com%2Fen%2Fstatus" target="_blank">Sign Up</a>
+            </div>
+            <input type="submit" onclick="fireSweetAlert()" value="Login">
+            <script>
+                function fireSweetAlert(){
+                    Swal.fire({
+                        icon:"success",
+                        title:"Uspešna prijava",
+                        html:"Izpolnjeno!"
+                    })
+                    event.preventDefault();
+                }
+                form.addEventListener("submit",fireSweetAlert());
+            </script>
+        </div>
+    </div>
+</body>
+</html>
